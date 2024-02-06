@@ -4,6 +4,7 @@ import * as settings from './settings';
 import * as save from './save';
 import * as theme from './theme';
 import * as logo from './logo';
+import * as randomElement from './random_element';
 
 export type elements = {
 	styles: HTMLStyleElement;
@@ -47,6 +48,7 @@ window.addEventListener(
 		save.init(elements);
 		theme.init(elements);
 		logo.init(elements);
+        randomElement.init(elements);
 	},
 	false,
 );
